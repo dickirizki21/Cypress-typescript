@@ -1,0 +1,65 @@
+Code Review
+
+Excute file login.ts
+
+Import file LoginPage
+Import file DashboardPage
+
+create new variable for LoginPage
+create new variable for DashboardPage
+define base url as variable
+
+ada 3 test case
+
+- Login Success
+  - call function loginPage.login parsing data url, username dan password
+  - action function login yang ada pada loginPage
+    - define variable as path for input username
+    - define variable as path for input password
+    - degine variable as path for button click login
+    - excetute function navigate to URL yang disudah di definisikan diatasnya dan memasukan value yang sudah di parse dari page login.ts
+    - execute function find input username by path dari function inputUsername dan memasukan value yang sudah di parse dari page login.ts
+    - execute function find input username by path dari function inputPassword dan memasukan value yang sudah di parse dari page login.ts
+    - execute searche button login by path dan memberikan action click
+  - execute function assetLogin yang ada pada loginPage.ts
+    - mencari element dengan class name .title yang ada pada page tersebut
+    - mencari element dengan class name .peek yang ada pada page tersebut
+    - mencari kata yang mengandung kata "product" pada halaman tesebut
+  - selesai
+
+- Invalid login
+  - call function loginPage.login parsing data url, username dan password
+  - action function login yang ada pada loginPage
+    - define variable as path for input username
+    - define variable as path for input password
+    - degine variable as path for button click login
+    - excetute function navigate to URL yang disudah di definisikan diatasnya dan memasukan value yang sudah di parse dari page login.ts
+    - execute function find input username by path dari function inputUsername dan memasukan value yang sudah di parse dari page login.ts
+    - execute function find input username by path dari function inputPassword dan memasukan value yang sudah di parse dari page login.ts
+    - execute searche button login by path dan memberikan action click
+  - execute function assetLoginFail yang ada pada loginPage.ts
+    - mencari element yang memiliki atribute [data-test="error"] pada page tersebut
+  - selesai
+
+- Login dan mencari product backpack
+  - call function loginPage.login parsing data url, username dan password
+  - action function login yang ada pada loginPage
+    - define variable as path for input username
+    - define variable as path for input password
+    - degine variable as path for button click login
+    - excetute function navigate to URL yang disudah di definisikan diatasnya dan memasukan value yang sudah di parse dari page login.ts
+    - execute function find input username by path dari function inputUsername dan memasukan value yang sudah di parse dari page login.ts
+    - execute function find input username by path dari function inputPassword dan memasukan value yang sudah di parse dari page login.ts
+    - execute searche button login by path dan memberikan action click
+  - execute function assetLogin yang ada pada loginPage.ts
+    - mencari element dengan class name .title yang ada pada page tersebut
+    - mencari element dengan class name .peek yang ada pada page tersebut
+    - mencari kata yang mengandung kata "product" pada halaman tesebut
+  - execute function sauceLabsBackpack yang ada pada dashboardPage.ts 
+    - define variable for name product Sauce Labs Backpack
+    - mencari element yang mengandung kata Sauce Labs Backpack dan memberikan action click
+    - mencari element yang mengandung kata Sauce Labs Backpack yang ada pada page tesebut
+  - selesai
+
+
+  export video for result cypress/videos

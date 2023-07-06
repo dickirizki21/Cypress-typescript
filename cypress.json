@@ -1,11 +1,12 @@
 {
-    "chromeWebSecurity": false,
-    "reporter" : "mochawesome",
-    "reporterOptions" : {
-        "chart":true,
-        "overwrite":false,
-        "html":false,
-        "json":true,
-        "reportDir":"cypress/reports"
-    }
+  "chromeWebSecurity": false,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "chart": true,
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "reportDir": "cypress/reports"
+  },
+  "projectId": "cjq7xs"
 }
