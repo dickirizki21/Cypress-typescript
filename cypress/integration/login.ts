@@ -5,7 +5,6 @@ import { ShoppingCartPages } from "./pages/shopping_cart_page"
 
 let loginPage = new LoginPage()
 let dashboardPage = new DashboardPage()
-let aboutPages = new AboutPages()
 let shoppingCart = new ShoppingCartPages()
 const URL = 'https://www.saucedemo.com/'
 
